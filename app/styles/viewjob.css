@@ -1,0 +1,86 @@
+@import 'global.css';
+
+
+.panel {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: calc( 100vh - 75px ); 
+	top: 75px;
+	width: calc( 100vw / 2 );
+}
+
+.panel > * {
+	align-self: center;
+}
+
+#col1 { left: 0; }
+
+#col2 { left: calc( 100vw / 2 ); }
+
+
+input, select {
+	font: inherit;
+	margin-bottom: 10px;
+	height: 25px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 0.5px solid gray;
+	width: 80%;
+	text-align: center;
+	font-size: 15px;
+}
+
+textarea {
+	font: inherit;
+	font-size: 15px;
+	width: 81%;
+	height: 153px;
+	resize: none;
+}
+
+label {
+	margin-top: 5px;
+}
+
+#job_id {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-weight: 600;
+	font-size: 25px;
+	border-radius: 10px;
+	box-shadow: 1ps solid gray;
+	background: rgb(231, 231, 231);
+	padding-right: 12px;
+	padding-left: 5px;
+}
+
+button {
+	position: absolute;
+	width: 140px;
+	height: 30px;
+	top: 20px;
+	border-radius: 5px;
+	border:rgb(231, 231, 231);
+	height: 40px;
+	font-weight: bolder;
+}
+
+#save_button {
+	left: calc( 100vw - 160px );
+	background-color: rgb(23, 211, 23);
+}
+
+#save_button:hover {
+	background-color: rgb(25, 160, 25);
+}
+
+#delete_button {
+	left: calc( 100vw - 320px );
+	background-color: rgb(255, 112, 112)
+}
+
+#delete_button:hover {
+	background-color: rgb(255, 82, 82);
+}

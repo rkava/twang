@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../styles/newjob.css">
+	</head>
+	<body>
+		<div id="container">
+
+			<h3>Create a new job</h3>
+
+			<label for="job_id">🏷️ Ticket number</label>
+			<input id="job_id" type="text" />
+
+			<label for="start_date">📆 Job start date</label>
+			<input id="start_date" type="date" readonly />
+
+			<label for="client_name">📛 Client name</label>
+			<input id="client_name" type="text" />
+
+			<label for="client_phone">📞 Phone number</label>
+			<input id="client_phone" type="text" />
+
+			<label for="item_desc">🎸 Item description</label>
+			<input id="item_desc" type="text" />
+
+			<label for="job_desc">❓ Job description</label>
+			<input id="job_desc" type="text">
+
+			<label for="job_status">🚦 Job status</label>
+			<input id="job_status" type="text" value="todo" readonly />
+
+			<label for="repairer">👷 Repairer</label>
+			<input id="repairer" type="text" />
+
+			<label for="repair_cost">🔧 Repair cost</label>
+			<input id="repair_cost" type="text">
+
+			<lable for="total_cost">💷 Total cost</lable>
+			<input id="total_cost" type="text">
+
+			<label for="contact_history">🗓️ Last client contact</label>
+			<input id="contact_history" type="text">
+
+			<label for="payment_info">🧾 Payment method/date</label>
+			<input id="payment_info" type="text">
+
+			<label for="notes">📝 Additional notes</label>
+			<textarea id="notes" placeholder="notes"></textarea>
+
+			<button id="submit">Submit</button>
+		</div>
+
+	</body>
+	<script src="../dist/bundle.js"></script>
+</html>

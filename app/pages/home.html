@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../styles/home.css" />
+	</head>
+	<body>
+
+		<h2 id="title">Jobs</h2>
+
+		<!-- Panel with buttons select either jobs or inventory -->
+		<div id="page_selector">
+			<button id="jobs_selector">Jobs</button>
+			<button id="inventory_selector">Inventory</button>
+		</div>
+
+		<!-- Job search panel and filtering options -->
+		<div id="container_jobs">
+			<b id="count"></b>
+			<div id="job_display"></div>
+			<div id="job_search">
+				<label for="search_string">📚 Keywords</label>
+				<input id="search_string" type="text" placeholder="Any information" /> 
+				<label for="job_id">🏷️ Ticket number</label>
+				<input id="job_id" placeholder="Number on the ticket"/>
+				<label for="date_from">📆 Date range (from/to)</label>
+				<input id="date_from" type="month" />
+				<input id="date_to" type="month" />
+				<label for="job_status">🚦 Status</label>
+				<select id="job_status" name="status">
+					<option value=""></option>
+					<option value="todo">Todo</option>
+					<option value="in_progress">In progress</option>
+					<option value="with_3rd_party">With 3rd party</option>
+					<option value="done">Done</option>
+				</select>
+				<button id="search_button">🔍 Search</button>
+				<button id="new_job_button">➕ New Job Entry</button>		
+			</div>
+		</div>
+
+
+		<div id="container_inventory"></div>
+
+
+		<button id="settings_button">Settings</button>
+	</body>
+	<!-- Load in script after defining DOM elements -->
+	<script src="../dist/bundle.js"></script>
+</html>

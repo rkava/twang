@@ -1,0 +1,43 @@
+@import 'global.css';
+
+
+#container {
+	width: 90%; 
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	transform: translateX( 20px );
+}
+
+#container > * {
+	width: 90%;
+	align-self: center;
+}
+
+#container > input { 
+	margin-bottom: 10px;
+	height: 25px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: 0.5px solid gray;
+}
+
+#container > label {
+	margin-bottom: 5px; 
+}
+
+input:read-only {
+	background-color: rgb(219, 219, 219);
+}
+
+textarea {
+	margin-bottom: 15px; 
+	resize: vertical;
+	height: 75px;
+	padding-left: 5px;
+}
+
+button {
+	height: 40px; 
+	margin-bottom: 30px;
+}

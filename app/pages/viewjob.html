@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../styles/viewjob.css" />
+	</head>
+	<body>
+
+		<div id="job_id">🏷️</div>
+
+		<button id="save_button">💾 Save changes</button>
+		<button id="delete_button">🗑️ Delete job</button>
+
+		<input type="hidden" id="id" />
+
+		<div id="col1" class="panel">
+			
+			<label for="start_date">📆 Start date</label>
+			<input id="start_date" type="date" />
+			
+			<label for="client_name">📛 Name</label>
+			<input id="client_name" type="text" />
+
+			<label for="client_phone">📞 Phone number</label>
+			<input id="client_phone" type="text" /> 
+			
+			<label for="item_desc">🎸 Item description</label>
+			<input id="item_desc" type="text" />
+
+			<label for="job_desc">❓ Job description</label>
+			<input id="job_desc" type="text" />
+
+			<label for="job_status">🚦 Job status</label>
+			<select id="job_status">
+				<option value="todo">Todo</option>
+				<option value="in_progress">In progress</option>
+				<option value="with_3rd_party">With 3rd party</option>
+				<option value="done">Done</option>
+			</select>
+
+			<label for="repairer">👷 Repairer</label>
+			<input id="repairer" type="text" /> 
+
+		</div>
+
+		<div id="col2" class="panel">
+
+			<label for="repair_cost">🔧 Repair cost</label>
+			<input id="repair_cost" type="text" />
+
+			<label for="total_cost">💷 Total cost</label>
+			<input id="total_cost" type="text" />
+
+			<label for="contact_history">🗓️ Last contact</label>
+			<input id="contact_history" type="text" />
+
+			<label for="payment_info">🧾 Payment date/method</label>
+			<input id="payment_info" type="text" /> 
+
+			<label for="notes">📝 Notes</label>
+			<textarea id="notes"></textarea>
+
+		</div>
+
+	</body>
+	<script src="../dist/bundle.js"></script>
+</html>

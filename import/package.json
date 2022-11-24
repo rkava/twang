@@ -1,0 +1,13 @@
+{
+  "name": "data-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/import.js"
+  },
+  "dependencies": {
+    "node-xlsx": "^0.21.0",
+    "sqlite3": "^5.1.2"
+  }
+}

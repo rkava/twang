@@ -1,0 +1,21 @@
+@import 'global.css';
+
+#container {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+#container > * {
+	align-self: center;
+	margin-bottom: 10px;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+}
+
+input {
+	width: 200px;
+}

@@ -1,0 +1,148 @@
+@import 'global.css';
+
+#title {
+	margin-left: 40px;
+}
+
+#count {
+	position: absolute; 
+	left: 110px;
+	top: 24px;
+	font-size: 20px;
+}
+
+#page_selector {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	left: calc( 100vw - 310px );
+	top: 20px;
+}
+
+#page_selector > * {
+	margin-left: 10px;
+	width: 120px;
+	height: 40px;
+	font-size: large;
+}
+
+#container_jobs {
+	display: block;
+}
+
+#container_inventory {
+	height: calc( 100vh - 150px );
+	width: 100vw;
+	display: none;
+	visibility: hidden;
+	background-color: red;
+	overflow-y: scroll;
+}
+
+#container_inventory::-webkit-scrollbar {
+	display: none;
+}
+
+#job_display {
+	height: calc( 100vh - 100px );
+	width: calc( 100vw - 300px ); 
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	overflow-y: scroll;
+}
+
+#job_display::-webkit-scrollbar {
+	display: none;
+}
+
+#job_search {
+	position: fixed; 
+	display: flex;
+	flex-direction: column;
+	left: calc( 100vw - 300px );
+	top: 90px;
+	width: 300px;
+	height: auto; 
+}
+
+#job_search > * {
+	margin-bottom: 10px;
+}
+
+#job_search > input {
+	width: 80%;
+	height: 30px;
+}
+
+#job_status {
+	width: 80%;
+	height: 30px;
+}
+
+#search_button {
+	width: 82%;
+	height: 30px;
+	margin-top: 15px;
+	background-color: rgb(23, 211, 23);
+	border-radius: 5px;
+	border:rgb(231, 231, 231);
+	height: 40px;
+	font-weight: bolder;
+}
+
+#settings_button {
+	position: fixed;
+	left: calc( 100vw - 135px );
+	top: calc( 100vh - 50px );
+	height: 30px;
+	width: 80px;
+}
+
+#new_job_button {
+	width: 82%;
+	height: 40px;
+	background-color: rgb(98, 179, 245);
+	border-radius: 5px;
+	border:rgb(231, 231, 231);
+	font-weight: bolder;
+	margin-top: 15px;
+}
+
+.job_entry {
+	user-select: none;
+	padding: 7px;
+	width: calc( 100% - 70px );
+	height: auto;
+	background: rgb(231, 231, 231);
+	margin-bottom: 10px; 
+	align-self: center;
+	border-radius: 10px;
+	border: 1px solid rgb(199, 199, 199);
+}
+
+.job_entry:hover {
+	cursor: pointer;
+}
+
+details {
+	margin-left: 35px;
+	margin-top: 5px;
+}
+
+summary {
+	user-select: none;
+    list-style-type: '➕ ';
+	font-size: 17px;
+	margin-bottom: 5px;
+	padding: 2px;
+	width: calc( 100% - 60px );
+}
+
+summary:hover {
+	cursor: pointer;
+}
+
+details[open] > summary {
+    list-style-type: '➖ ';
+}

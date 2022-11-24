@@ -1,0 +1,13 @@
+node_modules
+
+api/data
+api/logs
+api/backups 
+
+app/dist
+
+import/output
+import/input 
+
+.env
+
