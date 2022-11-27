@@ -31,6 +31,18 @@ module.exports = {
 		quantity    integer
 	);`,
 
+	createLessonsTable: `create table lessons (
+		teacher_name text, 
+		student_name text, 
+		lesson_day text,  
+		lesson_time text,
+		lesson_duration text,
+		lesson_cost text,
+		lesson_room text,
+		lesson_frequency,
+		last_lesson_date
+	);`,
+
 	insertJob: job => 
 		`insert into jobs (
 			job_id,       start_date,      client_name, 

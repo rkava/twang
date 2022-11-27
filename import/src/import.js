@@ -27,6 +27,7 @@ function createDatabase() {
 	db.serialize( () => {
 		db.run( queries.createJobsTable )
 		db.run( queries.createInventoryTable ) 
+		db.run( queries.createLessonsTable ) 
 	})
 
 	return Promise.resolve() 
