@@ -1,7 +1,7 @@
 <template>
 	<Sidebar /> 
 	<div id="content">
-		<component :is="currentView" /> 
+		<component :is="view" /> 
 	</div>
 </template>
 
@@ -23,19 +23,15 @@ export default {
 	name: 'App',
 	components: { Sidebar },
 	data() {
-		return {
-			path: window.location.hash
-		}
+		return { path: window.location.hash }
 	},
 	computed: {
-		currentView() {
-			return routes[ this.path.slice( 1 ) || '/' ]
-		}
+		view() { return routes[ this.path.slice( 1 ) || '/' ] }
 	},
 	mounted() {
-		window.addEventListener( 'hashchange', () => {
+		window.onhashchange = () => {
 			this.path = window.location.hash 
-		})
+		}
 	}
 }
 </script>

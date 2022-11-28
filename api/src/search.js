@@ -105,7 +105,6 @@ function runQuery( query, params, res ) {
 	let db = new sqlite.Database( process.env.DB_PATH )
 
 	db.serialize(() => { db.all( query, params, ( err, rows ) => {
-		console.log( err, query ) 
 		res.send({
 			 status: err ? 400 : 200,
 			message: err || 'Success',

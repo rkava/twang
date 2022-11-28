@@ -5,21 +5,15 @@
 </template>
 
 <script>
+//import Day     from './Day.vue'     //Lessons occuring on a specific day
+//import Room    from './Room.vue'    //Lessons occuring in a specific room (entire week)
+//import Teacher from './Teacher.vue' //Lessons with a specific teacher (entire week) 
+//import Today   from './Today.vue'   //Lessons happening on the current day
 
 /**
- * Implementing the lesson tracker is going to be pretty difficult. 
- * It needs to provide a few useful insights for the user. 
- * 	- Daily overview: 
- * 		A list of all lessons happening on the current day in all
- * 		available lesson rooms. 
- *  - Specific teacher:
- * 		The weekly schedule of a specific teacher 
- *	- Specific day 
-		The overall schedule for each room on a particular day of 
-		the week
-	- Specific room 
-		The week plan for a specific teaching room 
- *
+ * Select which component to render the same way it is selected 
+ * when chosing a tab on the sidebar. Give each component a hash 
+ * route and use <a> tags to select which route to go to 
  */
 
 export default {
